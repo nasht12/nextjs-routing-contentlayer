@@ -52,25 +52,9 @@ export async function Header() {
           )}
         </div>
       </div>
-      <div className="flex items-center justify-end space-x-2">
-        <a
-          target="_blank"
-          href="https://github.com/vercel/nextjs-ai-chatbot/"
-          rel="noopener noreferrer"
-          className={cn(buttonVariants({ variant: 'outline' }))}
-        >
-          <IconGitHub />
-          <span className="hidden ml-2 md:flex">GitHub</span>
-        </a>
-        <a
-          href="https://github.com/vercel/nextjs-ai-chatbot/"
-          target="_blank"
-          className={cn(buttonVariants())}
-        >
-          <IconVercel className="mr-2" />
-          <span className="hidden sm:block">Deploy to Vercel</span>
-          <span className="sm:hidden">Deploy</span>
-        </a>
+      <div className="flex items-center justify-center space-x-2">
+          <Link href="/" rel="nofollow">Savant Seal</Link>
+          <Link href="/posts" rel="nofollow">Posts</Link>
       </div>
     </header>
   )
