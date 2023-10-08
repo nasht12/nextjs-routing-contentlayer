@@ -1,6 +1,8 @@
 import NextAuth, { type DefaultSession } from 'next-auth'
 import GitHub from 'next-auth/providers/github'
 
+export const dynamic = "force-static";
+
 declare module 'next-auth' {
   interface Session {
     user: {

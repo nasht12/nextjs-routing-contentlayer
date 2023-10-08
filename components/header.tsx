@@ -19,6 +19,8 @@ import { ClearHistory } from '@/components/clear-history'
 import { UserMenu } from '@/components/user-menu'
 import { LoginButton } from '@/components/login-button'
 
+export const dynamic = "force-static";
+
 export async function Header() {
   const session = await auth()
   return (
@@ -54,7 +56,10 @@ export async function Header() {
       </div>
       <div className="flex items-center justify-center space-x-2">
           <Link href="/" rel="nofollow">Savant Seal</Link>
+          <Link href="/home" rel="nofollow">Home</Link>
           <Link href="/posts" rel="nofollow">Posts</Link>
+          <Link href="/about" rel="nofollow">About</Link>
+          <Link href="/assistant" rel="nofollow">AI Assistant</Link>
       </div>
     </header>
   )
